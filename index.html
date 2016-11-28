@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!-- set the encoding of your site -->
+	<meta charset="UTF-8">
+	<!-- set the viewport width and initial-scale on mobile devices -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>PSC</title>
+	<!-- include the site stylesheet -->
+	<link type="text/css" rel="stylesheet" href="css/main.css" media="all">
+	<!-- include font-awesome stylesheet -->
+	<link type="text/css" rel="stylesheet" href="css/font-awesome.css" media="all">
+	<!-- include google fonts stylesheet -->
+	<link type="text/css" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,500">
+</head>
+<body>
+	<div id="wrapper">
+		<div class="form-holder clearfix">
+			<form action="#">
+				<ul class="tools">
+					<li>
+						<a href="#">
+							<i class="fa fa-sticky-note"></i>
+							<strong class="title">Post</strong>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<i class="fa fa-rotate-left"></i>
+							<strong class="title">Cancel</strong>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<i class="fa fa-file-o"></i>
+							<strong class="title">New</strong>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<i class="fa fa-eraser"></i>
+							<strong class="title">Delete</strong>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<i class="fa fa-search"></i>
+							<strong class="title">Search</strong>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<i class="fa fa-sticky-note-o"></i>
+							<strong class="title">See Notes</strong>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<i class="fa fa-sign-out"></i>
+							<strong class="title">Exit</strong>
+						</a>
+					</li>
+				</ul>
+				<!-- tabs container -->
+				<div class="tabs-container">
+					<div class="top-row">
+						<label for="item">Item ID:</label>
+						<input id="item" class="form-control" type="text" placeholder="1">
+					</div>
+					<div id="tab-container" class="tab-container">
+						<ul class='etabs'>
+							<li class="tab"><a href="#tab1"><i class="fa fa-flash"></i>Item</a></li>
+							<li class="tab"><a href="#tab2"><i class="fa fa-cubes"></i>Stock</a></li>
+							<li class="tab"><a href="#tab3"><i class="fa fa-cubes"></i>Formula</a></li>
+							<li class="tab"><a href="#tab4"><i class="fa fa-cubes"></i>Supplier</a></li>
+							<li class="tab"><a href="#tab5"><i class="fa fa-cubes"></i>Spesification</a></li>
+							<li class="tab"><a href="#tab6"><i class="fa fa-cubes"></i>Composition</a></li>
+						</ul>
+						<div class="panel-container">
+							<div id="tab1" class="tab-box tab1">
+								<div class="top-panel clearfix">
+									<div class="col">
+										<div class="form-group">
+											<label for="code">Code:</label>
+											<input id="code" class="form-control" type="text" placeholder="01">
+										</div>
+									</div>
+									<div class="col">
+										<div class="form-group">
+											<label for="cmr">CMR #:</label>
+											<input id="cmr" class="form-control" type="text">
+										</div>
+									</div>
+									<div class="col">
+										<div class="form-group">
+											<label for="match-item">Match Item #:</label>
+											<input id="match-item" class="form-control" type="text">
+										</div>
+									</div>
+								</div>
+								<div class="blocks-holder clearfix">
+									<div class="block">
+										<div class="box box1">
+											<div class="form-group">
+												<label for="description">Description:</label>
+												<input id="description" class="form-control" type="text" placeholder="ON/3200/80">
+											</div>
+											<div class="form-group">
+												<label for="notes">Notes:</label>
+												<textarea id="notes" cols="30" rows="10"></textarea>
+											</div>
+											<div class="form-group">
+												<label for="status">Status:</label>
+												<select id="status" class="form-control">
+													<option>Active</option>
+													<option disabled="disabled">Disabled</option>
+												</select>
+											</div>
+											<div class="form-group">
+												<label for="ci">CI #:</label>
+												<input id="ci" class="form-control" type="text">
+											</div>
+											<div class="form-group">
+												<label for="chemical">Chemical Name:</label>
+												<input id="chemical" class="form-control" type="text">
+											</div>
+										</div>
+										<div class="box box2">
+											<div class="row">
+												<div class="form-group">
+													<label for="type">Type:</label>
+													<input id="type" class="form-control" type="text" placeholder="Both">
+												</div>
+												<div class="form-group">
+													<label for="class">Class:</label>
+													<input id="class" class="form-control" type="text" placeholder="Stock">
+												</div>
+											</div>
+											<div class="row">
+												<div class="form-group">
+													<label for="category">Category:</label>
+													<input id="category" class="form-control" type="text" placeholder="Raw Material">
+												</div>
+												<div class="form-group">
+													<label for="sub-category">Sub-Category:</label>
+													<input id="sub-category" class="form-control" type="text" placeholder="Pigment">
+												</div>
+											</div>
+											<div class="row">
+												<div class="form-group">
+													<label for="sub-category-2">Sub-Category 2:</label>
+													<input id="sub-category-2" class="form-control" type="text" placeholder="None">
+												</div>
+												<div class="form-group">
+													<label for="sub-category-3">Sub-Category 3:</label>
+													<input id="sub-category-3" class="form-control" type="text" placeholder="Inv_Core">
+												</div>
+											</div>
+											<div class="inner-block">
+												<div class="row three-cols clearfix">
+													<div class="form-group">
+														<label for="formula">Formula?</label>
+														<input id="formula" class="form-control" type="text" placeholder="Yes">
+													</div>
+													<div class="form-group">
+														<label for="identity">Identity?</label>
+														<input id="identity" class="form-control" type="text" placeholder="Yes">
+													</div>
+												</div>
+												<div class="row three-cols clearfix">
+													<div class="form-group">
+														<label for="compound">Compound?</label>
+														<input id="compound" class="form-control" type="text" placeholder="Yes">
+													</div>
+													<div class="form-group">
+														<label for="unit">Unit:</label>
+														<input id="unit" class="form-control" type="text" placeholder="LB(S)">
+													</div>
+													<div class="form-group">
+														<label for="additive">Additive Changed</label>
+														<input type="checkbox" id="additive">
+													</div>
+												</div>
+												<div class="row two-cols clearfix">
+													<div class="form-group">
+														<label for="main-supplier">Main Supplier:</label>
+														<input id="main-supplier" class="form-control" type="text" placeholder="SCHLENK BOTH METALLIC">
+													</div>
+													<div class="form-group">
+														<label for="main-customer">Main Customer:</label>
+														<input id="main-customer" class="form-control" type="text">
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="block">
+										<div class="box">
+											<table>
+												<tr>
+													<td><strong class="label">Currency: <span>US$</span></strong></td>
+													<td><strong class="label">Unity: <span>LB(S)</span></strong></td>
+													<td><strong class="label"><span>Y</span></strong></td>
+												</tr>
+												<tr>
+													<td>
+														<label for="qty-stock">Qty in Stock:</label>
+														<input id="qty-stock" type="text" class="form-control" placeholder="0,00">
+													</td>
+													<td>
+														<label for="qty-mln">Qty Mln:</label>
+														<input id="qty-mln" type="text" class="form-control" placeholder="0,01">
+													</td>
+													<td>
+														<label for="qty-max">Qty: Max:</label>
+														<input id="qty-max" type="text" class="form-control" placeholder="0,00">
+													</td>
+												</tr>
+											</table>
+										</div>
+										<div class="box">
+											<table>
+												<tr>
+													<td colspan="6"><strong class="label">Cost: <span>(11/03/2009)</span></strong></td>
+												</tr>
+												<tr>
+													<td><input type="text" placeholder="6,95"></td>
+													<td><input id="lbs" type="text"></td>
+													<td><label for="lbs">LB(S)</label></td>
+													<td>&nbsp;</td>
+													<td><input type="text" disabled="disabled" placeholder="0,00"></td>
+													<td><input type="text" disabled="disabled"></td>
+												</tr>
+												<tr>
+													<td colspan="6"><strong class="label">Cost CANADA(KG(S)):</strong></td>
+												</tr>
+												<tr>
+													<td colspan="6" class="no-padding">
+														<table>
+															<tr>
+																<td><input type="text" disabled="disabled" placeholder="Calc"></td>
+																<td><input type="text" disabled="disabled"></td>
+																<td><label for="lbs">CA$</label></td>
+															</tr>
+														</table>
+													</td>
+												</tr>
+											</table>
+										</div>
+										<div class="box">
+											<table>
+												<tr>
+													<td><strong class="label">On Hold</strong></td>
+													<td><strong class="label">Qty On Hold</strong></td>
+													<td></td>
+													<td><strong class="label">Lead Time</strong></td>
+												</tr>
+												<tr>
+													<td><input type="text" disabled="disabled" placeholder=",00"></td>
+													<td><input type="text" disabled="disabled" placeholder="0,00"></td>
+													<td><label>LB(S)</label></td>
+													<td><input type="text" placeholder="0"></td>
+												</tr>
+												<tr>
+													<td><input type="text" disabled="disabled" placeholder=",00"></td>
+													<td><input type="text" disabled="disabled" placeholder="0,00"></td>
+													<td><label>LB(S)</label></td>
+												</tr>
+											</table>
+										</div>
+										<div class="box">
+											<table>
+												<tr>
+													<td><strong class="label">Heat Stability:</strong></td>
+													<td><input type="text"></td>
+												</tr>
+												<tr>
+													<td><strong class="label">Light Stability:</strong></td>
+													<td><input type="text"></td>
+												</tr>
+												<tr>
+													<td colspan="2" class="no-padding">
+														<table>
+															<tr>
+																<td><label for="fda">FDA</label></td>
+																<td><input id="fda" type="checkbox"></td>
+																<td><label for="hbbf">HBBF</label></td>
+																<td><input id="hbbf" type="checkbox"></td>
+															</tr>
+														</table>
+													</td>
+												</tr>
+												<tr>
+													<td colspan="2" class="no-padding">
+														<table>
+															<tr>
+																<td width="59"><label for="img" class="red">Image:</label></td>
+																<td colspan="3"><input id="img" type="text"></td>
+															</tr>
+															<tr>
+																<td width="59">&nbsp;</td>
+																<td width="20"><input type="checkbox"></td>
+																<td width="234"><strong class="label red">Available</strong></td>
+																<td width="200">&nbsp;</td>
+															</tr>
+															<tr>
+																<td align="right"><strong class="label">UCC #:</strong></td>
+																<td colspan="2"><input type="text"></td>
+																<td align="right">
+																	<table>
+																		<tr>
+																			<td width="82%"><label for="qc">QC Required:</label></td>
+																			<td width="18%" align="right"><input type="checkbox"></td>
+																		</tr>
+																	</table>
+																</td>
+															</tr>
+															<tr>
+																<td width="59"><label for="barcode">Barcode:</label></td>
+																<td colspan="3"><input id="barcode" type="text"></td>
+															</tr>
+														</table>
+													</td>
+												</tr>
+											</table>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div id="tab2" class="tab-box tab2">
+								<h2>JS for these tabs</h2>
+								<!-- content -->
+							</div>
+							<div id="tab3" class="tab-box tab3">
+								<h2>CSS Styles for these tabs</h2>
+								<!-- content -->
+							</div>
+							<div id="tab4" class="tab-box tab4">
+								<h2>CSS Styles for these tabs</h2>
+								<!-- content -->
+							</div>
+							<div id="tab5" class="tab-box tab5">
+								<h2>CSS S
+									<input id="hbbf2" type="text">
+								tyles for these tabs</h2>
+								<!-- content -->
+							</div>
+							<div id="tab6" class="tab-box tab6">
+								<h2>CSS Styles for these tabs</h2>
+								<!-- content -->
+							</div>
+						</div>
+					</div>
+				</div>
+			</form>
+		</div>
+	</div>
+	<!-- include jQuery library -->
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+	<script type="text/javascript">window.jQuery || document.write('<script src="js/jquery-1.11.2.min.js"><\/script>')</script>
+	<!-- include tabs jQuery -->
+	<script type="text/javascript" src="js/jquery.hashchange.min.js"></script>
+	<script type="text/javascript" src="js/jquery.easytabs.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready( function() {
+			$('#tab-container').easytabs();
+		});
+	</script>
+</body>
+</html>
